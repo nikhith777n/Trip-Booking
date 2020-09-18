@@ -87,7 +87,7 @@ class Createflight extends Component {
                                  <input placeholder="price" name="price" className="form-control"
                                      value={this.state.price} onChange={this.pprice}/>
                                 <input placeholder="Date-dd-mm-yy" name="date" className="form-control"
-                                     value={this.state.price} onChange={this.ddate}/>
+                                     value={this.state.date} onChange={this.ddate}/>
                             
                                 </div>
                                 <button className="btn btn-success" onClick={this.saveflight}>Save</button>
