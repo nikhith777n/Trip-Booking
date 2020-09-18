@@ -40,7 +40,7 @@ export class CustomerSelectHotel extends Component {
     changeNbOfDaysHandler=(event)=>{
         this.setState({nbOfDays:event.target.value});
     }
-    hotelNameHandle =(event)=>{
+    hotelNameHandler =(event)=>{
         this.setState({hotelName:event.target.value});
     }
     roomNumberHandler =(event)=>{
@@ -64,11 +64,11 @@ export class CustomerSelectHotel extends Component {
                             <form>
                                 <div className="form-group">
                                     <label>Source Location</label>
-                                    <input placeholder="From where?" name="hotelName" className="form-control"value={this.state.sourceLocation} onChange={this.hotelNameHandler.bind(this,hotels.hotelName,hotels.hotelId)} />
+                                    <input placeholder="From where?" name="hotelName" className="form-control"value={this.state.sourceLocation} onChange={this.hotelNameHandler.bind(this)} />
                                 </div>
                                 <div className="form-group">
                                     <label>Destination Location</label>
-                                    <input placeholder="Where to?" name="roomNumber" className="form-control"value={this.state.destinationLocation} onChange={this.roomNumberHandler.bind(this,hotels.roomNumber)} />
+                                    <input placeholder="Where to?" name="roomNumber" className="form-control"value={this.state.destinationLocation} onChange={this.roomNumberHandler.bind(this)} />
                                 </div>
                                 <div className="form-group">
                                     <label>Leaving Date</label>
