@@ -23,19 +23,19 @@ public class passenger {
 	private int flightno;
 	@Column(name="seatno")
 	private int seatno;
-	//@Column(name="date")
-	//private Date dod;
+	@Column(name="date")
+	private String date;
 	public passenger()
 	{
 		
 	}
-	public passenger(String source, String destination, int flightno, int seatno) {
+	public passenger(String source, String destination, int flightno, int seatno,String date) {
 		super();
 		this.source = source;
 		this.destination = destination;
 		this.flightno = flightno;
 		this.seatno = seatno;
-	//	this.dod = dod;
+		this.date = date;
 	}
 	public long getBookingid() {
 		return bookingid;
@@ -67,12 +67,12 @@ public class passenger {
 	public void setSeatno(int seatno) {
 		this.seatno = seatno;
 	}
-	/*public Date getDod() {
-		return dod;
+	public String getDate() {
+		return date;
 	}
-	public void setDod(Date dod) {
-		this.dod = dod;
-	}*/
+	public void setDate(String date) {
+		this.date = date;
+	}
 	
 	
 }
