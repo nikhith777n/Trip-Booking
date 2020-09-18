@@ -53,7 +53,7 @@ class Displayflights extends Component {
        
                     <tbody>
                         {
-                         this.state.flights.filter(flight=>flight.source===this.state.source && flight.destination===this.state.destination && flight.date===this.state.date).map(
+                         this.state.flights.filter(flight=>flight.source===this.state.source && flight.destination===this.state.destination && flight.date===this.state.date && flight.as>0).map(
                            fo => 
                             <tr>
                                 <td>{fo.id}</td>
