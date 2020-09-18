@@ -60,7 +60,7 @@ this.setState({destination:event.target.value});
                                     <input placeholder="destination" name="destination" className="form-control"
                                          value={this.state.destination} onChange={this.ddestination}/>
                                     <label>Date </label>
-                                    <input placeholder="Date:dd/mm/yy" name="date" className="form-control"
+                                    <input placeholder="Date:dd-mm-yy" name="date" className="form-control"
                                          value={this.state.date} onChange={this.ddate}/>
                                 </div>
                                 <button className="btn btn-success" onClick={()=>this.search()}>search</button>
