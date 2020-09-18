@@ -27,7 +27,7 @@ public class flight {
 	@Column(name="avais")
 	private int as;
 	@Column(name="date")
-	private String date
+	private String date;
 	
 	public flight()
 	{
