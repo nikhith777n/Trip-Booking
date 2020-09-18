@@ -86,7 +86,7 @@ class Createflight extends Component {
                                      value={this.state.aid} onChange={this.Aid}/>
                                  <input placeholder="price" name="price" className="form-control"
                                      value={this.state.price} onChange={this.pprice}/>
-                                <input placeholder="Date-dd/mm/yy" name="date" className="form-control"
+                                <input placeholder="Date-dd-mm-yy" name="date" className="form-control"
                                      value={this.state.price} onChange={this.ddate}/>
                             
                                 </div>
