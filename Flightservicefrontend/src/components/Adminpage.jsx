@@ -55,7 +55,7 @@ class Adminpage extends Component {
                 <div className="row">
                     <button onClick={()=>this.add()} className="btn btn-primary">Add Flight</button>
                   <button style={{marginLeft:"10px"}} onClick={this.rc.bind(this)} className="btn btn-success">Hotel Details</button>
-                    <button style={{marginLeft:"850px",backgroundColor:"brown"}} onClick={()=>this.logout()} className="btn btn-danger">Logout</button>
+                    <button style={{marginLeft:"800px",backgroundColor:"brown"}} onClick={()=>this.logout()} className="btn btn-danger">Logout</button>
                    
 
                     <table className = "table table-striped table-bordered" style={{marginTop:"50px"}}>
@@ -86,9 +86,9 @@ class Adminpage extends Component {
                                     <td>{fo.date}</td> 
                                     <td>{fo.price}</td>  
                                     <td>
-                                    <button onClick={()=>this.modify(fo.id)} className="btn btn-info">Update Flight</button>
+                                    <button style={{fontSize:14}}onClick={()=>this.modify(fo.id)} className="btn btn-info">Update Flight</button>
                          {/*        <button style={{marginLeft:"10px"}} className="btn-btn-primary" onClick={this.delete(fo.id)}>Delete</button>*/}
-                                    <button style={{marginLeft:"10px"}} onClick={()=>this.delete(fo.id)} className="btn btn-danger">Delete Flight</button>
+                                    <button style={{fontSize:14}} onClick={()=>this.delete(fo.id)} className="btn btn-danger">Delete Flight</button>
                                     </td>
                                 </tr>
                             )
