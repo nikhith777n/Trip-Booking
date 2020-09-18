@@ -53,7 +53,7 @@ class Successful extends Component {
                         </tr>
                     </table>
                                     </form>
-                                    <button style={{color:"blue",marginTop:"150px",marginLeft:"505px"}}className="btn btn-success" onClick={this.bc.bind(this)}>Book Car</button>
+                                    <button style={{color:"blue",marginTop:"150px",marginLeft:"505px"}}className="btn btn-success" onClick={this.bc.bind(this)}>Book Hotel</button>
 
             </div>
         );
