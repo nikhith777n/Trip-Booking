@@ -104,7 +104,7 @@ ismounted=false;
                                      value={this.state.tseats} onChange={this.ttseats}/>
                                  <input placeholder="availableseats" name="Availableseats" className="form-control"
                                      value={this.state.as} onChange={this.aas}/>
-                                <input placeholder="Date-dd/mm/yy" name="date" className="form-control"
+                                <input placeholder="Date-dd-mm-yy" name="date" className="form-control"
                                      value={this.state.date} onChange={this.ddate}/>
                                  <input placeholder="price" name="price" className="form-control"
                                      value={this.state.price} onChange={this.pprice}/>
