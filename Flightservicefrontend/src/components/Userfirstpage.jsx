@@ -37,7 +37,7 @@ this.setState({destination:event.target.value});
     }
     cancel()
     {
-    this.props.history.push("/user");  
+    this.props.history.push("/");  
     }
     search(){
        // console.log("going");
@@ -64,7 +64,7 @@ this.setState({destination:event.target.value});
                                          value={this.state.date} onChange={this.ddate}/>
                                 </div>
                                 <button className="btn btn-success" onClick={()=>this.search()}>search</button>
-                                <button className="btn btn-danger" onClick={()=>this.cancel.bind(this)} style={{marginleft:"10px"}}>Cancel</button>
+                                <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginleft:"10px"}}>Cancel</button>
                             </form>
                         </div>
                     </div>
