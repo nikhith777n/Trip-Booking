@@ -9,7 +9,7 @@ export class CustomerDetails extends Component {
         }
     }
     ok(){
-     window.location.href="http://localhost:3001/hoteldetails";
+     window.location.href="http://localhost:3000";
     }
     book(){
         this.props.history.push('/customerhoteldetails');
@@ -49,8 +49,8 @@ export class CustomerDetails extends Component {
 
                 </form>
                 <div>
-                    <button className="btn btn-success"onClick={this.ok.bind(this,customer.hotelId,this.state.hotelStatus)}>Ok</button>
-                    <button className="btn btn-primary" onClick={this.book.bind(this)}>Book One More Room</button>
+                    <button className="btn btn-success"onClick={this.ok.bind(this,customer.hotelId,this.state.hotelStatus)}>Ok & Exit</button>
+                    <button className="btn btn-primary" onClick={this.book.bind(this)}>Book Another Car</button>
                 </div>
             </div>
         )
